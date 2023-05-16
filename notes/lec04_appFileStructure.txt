@@ -1,0 +1,112 @@
+// LEC 1 TO 3 -> It is Notebook please refer that 
+
+IMPORTANT FILES ----->
+
+1. package.json file -> It is very important in whole project, agr ye file kahin bhi gumadi aur backup nai hai toh 
+                        hmara project run nai ho skta 
+                    
+                    -> use -> ye project ki sari information ko hold rkhti hai for ex: 
+                             project name, project version, scripts: [vo sari commands hai jo hum run krte hai] , 
+                             Dependencies , dev dependencies, 
+                             
+                             basically koi bhi library install krre hai toh uski details idr milegi hi milegi. 
+                             
+                            - so overall, It is very important file idr hmari file ki sari ki sari information collect hoti hai 
+
+---------------------------------------------------
+
+2. metro-config.js file -> It is used to do "fast reload, compile, fast display" all these operation handled by this METRO_CONFIG.js 
+
+---------------------------------------------------
+
+3. Babel Config.js File -> suppose, we have written latest ECMA Script code or Type Script code, Then the Javascript compiler or browser compiler 
+                           can not under stand the latest version of code, 
+                           so then the babel file converts the Newer code to the oldest code, 
+
+                           idr configuration bhi kar skte hai, like konse version me upgrade krna hai konsi cheezo ko change krna h etc 
+
+----------------------------------------------------
+
+4. Index.js -> It is the entry point of JS, iske andr jitne bhi component bnate hai vo sab isme register krte hai  
+
+----------------------------------------------------
+
+5. App.js -> It is our first component of our app, and starting point of our project
+
+----------------------------------------------------
+
+6. EsLintrc.js ->  Es means ecma script, suppose agr unused variable pdhe hai unke liye error dikhana hai , ya kahin console pr error dikhana hai
+                 means jitni bhi EcmaScript ki configuration hoti hai vo sab Idr kar skte hai 
+
+-----------------------------------------------------
+
+7. Android and IOS folder -> ye android and Ios wali build ko "COMPILE krne ke liye and ACTUAL APP CREATE" krne ke liye responsible hota hai 
+                      
+                        - primary purpose is to compile in android and Ios and Jb build bnate hai toh Javascript ke code ko Native code me convert krdeti hai 
+
+-----------------------------------------------------
+
+8. package_lock.json -> It contains the information of dependencies of dependencies. 
+                        It is follows Tree Like structure 
+
+                        for eg: react-native-bottom-sheet package install kra, is library ki bhi kahin na kahin dependency hai, 
+                        eg: react-native-bottom-sheet ye jo hai iski bhi kahin aur dependency ho
+                        eg react-native-bottom-sheet iski dependency hai X package ke upr and us X package ki dependency hai Y package ke upr and so on 
+
+
+So package.Json hmari application ki information rkhta hai like name version, scripts, dependencies etc 
+package_lock.json -> It follows the tree like structure of our dependencies, for eg: react native bottom sheet depends on X package and 
+Then X package depends on some other package it contains all the information. 
+
+------------------------------------------------------
+
+9. GemFile -> This is made for ruby, jb application ko debug krna hota hai tab ruby kaam me aati hai , so jo bhi hum configuration krna chahte hai vo hum iss file 
+                me kar skte hai 
+
+-------------------------------------------------------
+
+10. Watchman -> Watchman and metro work Togetherly , watchman dekhta hai ki "APPLICATION KE ANDR KUCH CHANGE HUA, SUPPOSE HUMNE KOI TEXT CHANGE KRA, SO JO CHANGES HONGE 
+                USKO DETECT KREGA WATCHMAN AND JO CHANGES KO IMPLEMENT/LOAD KREGA VO HAI METRO
+
+--------------------------------------------------------
+
+11. .ruby-version -> iske andr ruby ka konsa version hai vo milega 
+
+---------------------------------------------------------
+
+12. prettierrc.js -> ye hmare app ki formatting ko smbhalti hai for eg: kitne spaces dene hai, kitne single quotes and double quotes lgane hai 
+                     ye sab handle krta hai    
+-----------------------------------------------------------
+
+13. .node_version -> current node version, konsa support hora hai 
+
+------------------------------------------------------------
+
+14. .gitIgnoree -> contains that files jo hum chahte hai git wale folder par upload na hoye 
+
+                - suppose koi folder bnaya h and vo hum nai chahte ki git par upload hoye to usko hum iske andr dal dete h 
+--------------------------------------------------------------
+
+15. .flowConfig -> jb code compile hota hai, toh uska kya flow rhega suppose konsi file phle compile  krni hai ya konsi baad me, 
+                    kuch configuration krni hai to vo sab isme kar skte hai 
+
+---------------------------------------------------------------
+
+16. .buckConfig -> ye btati hai, ki hum apne system ke andr konse platform ko support krre hai like googlee API:23
+
+----------------------------------------------------------------
+
+17. Node_Modules -> It contains the detailed information of our application, jitne bhi packages hote hai pure project me , sabki detailed information hoti h isme 
+
+note -> Node_Modules IS A HEAVY FOLDER, SO KBHI HI GIT PR UPLOAD NAI KRTE, SO AGR 1 PC SE LAPTOP 
+  DUSRE PC ME PROJECT CHALNA HAI "NPM INSTALL OR YARN INSTALL" Isse hojayega 
+
+-----------------------------------------------------------------
+
+18. bundle - jb ios or android app ki bundling krte hai tb hum configuration kar skte hai 
+
+------------------------------------------------------------------
+
+19. _tests_ -> jb hum unit test case likhte hai toh "USKA CODE autogenerate hota hai isme" 
+
+-------------------------- FINISH ----------------------------------------
