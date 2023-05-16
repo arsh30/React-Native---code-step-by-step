@@ -1,0 +1,54 @@
+React native is open soruce framework for building android and IOS application using react and the 
+The code which we write is Native code, means we write it once, and it is compatible for both android and IOS 
+
+CORE  COMPONENTS -> 
+    1. <View> </View> -> A non scrolling <div> tag
+    2. <Text> </Text> -> It is same like a P Tag 
+    3. <Image> </Image> -> It is same like a "img" tag 
+    4. <ScrollView> </ScrollView> -> It is a Scrollable Div 
+    5. <TextInput> </TextInput> -> It is a input Tag 
+
+----------------------------------------------------------------------------------------------
+
+NOTE -> 1. Agr kuch Work Nai krra Ya Text Chaiye toh "VIEW" Component lenge uske andr likhege 
+2. note - jo bhi JSX return vo sirf 1 hi cheez krega, so 1 hi div ke andr likhege sab 
+3. jo bhi text likhege vo sab -> TEXT tag ke andr likhege
+----------------------------------------------------------------------------------------------
+
+1. Text -> jbhi KUCH likhna ho Toh Text Tag use krege 
+2. View -> It is Non Scrollable div, It is like a DIV tag, used as a wrapper 
+3. <Button title='press here'> </Button> -> Important attributes ie 'title' jo bhi title ke andr denge , vo button ke andr ka
+                                            Text hoga, 
+
+
+
+
+--------------------------------------------------------------------
+
+CODE ->> 
+
+import {Button, Text, View} from 'react-native'; // react native se component import kre
+
+function App() { //
+  return (
+    <View> 
+      <Text style={{fontSize:20}}>Hello Text Component</Text>
+      <Text style={{fontSize:22}}>Hello Second Component</Text>
+      <Button title='Press Here'></Button>
+      {/* jo title ke andr denge vo Button pr show hoga */}
+    </View>
+  );
+}
+
+export default App;
+
+------------------------------------- finish ----------------------
+
+
+
+
+
+
+
+
+

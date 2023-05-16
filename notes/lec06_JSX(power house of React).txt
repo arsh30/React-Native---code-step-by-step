@@ -1,0 +1,47 @@
+What is JSX ??
+
+- JSX is javascript XML , 
+- benefit - HTML ke andr hi javascript ka code likh pate hai 
+- [note -: jo bhi return ke baad likha hota hai component me vo sab JSX hi hai  
+   and make sure JSX sirf hi Tag ko return kar skta hai
+   and phle hum javascript ki alag file bnate the and HTML ki seperate file then dono ko sync krte the 
+  ]
+
+-------------------------------------------------------
+
+Example: 
+
+import {Button, Text, View} from 'react-native';
+
+
+function fruit() {
+  return 'Apple';
+}
+
+function App() {
+const name = 'arsh';
+let age = 19;
+var email = 'abc@test.com';
+  
+  return (
+    <View>
+      <Text style={{fontSize: 22}}>{name} </Text> 
+      <Text style={{fontSize: 22}}>{age} </Text> 
+      <Text style={{fontSize: 22}}>{fruit()} </Text> // FUNCTION call bhi iske andr krege 
+      <Text style={{fontSize: 22}}>{email} </Text>
+      <Text style={{fontSize: 22}}>{100 + 20} </Text>
+      <Text style={{fontSize:22}}>{age === 39 ? "above 30" : "unknow age"}</Text>
+    </View>
+  );
+}
+
+IMP TIP: 1. { } agr javascript use krni hai toh iske andr krege 
+    TIP 2. { } Koi bhi variable access krna hai vo bhi iske andr krege 
+    TIP 3. JSX iske andr hum Function call krege 
+    TIP 4. we can do Mathematical operations in this 
+    TIP 5. koi bhi condition lgani hai vo bhi iske andr hi lgaege 
+
+OVERALL TIP -> Jo bhi javascript ka variable ya JS use krni hai, To Curly brackets 
+Ke andr hi bna skte hai. 
+
+--------------------------- Finish ----------------------

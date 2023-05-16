@@ -1,0 +1,86 @@
+what are component? 
+    - A component is like a function that is ReUsable
+
+-------------------------
+
+Q) Types of Component ?
+S) 1) Function based
+2) class Based component [ye phle used hote the ab nai]
+
+Note - jbhi component bnate hai uska first letter always be capital 
+
+------------------------
+
+Examples of Component? 
+
+Header component, footer component, Hero Section component, and uske andr chotte chotte parts all are components
+so jidr mrji same component use kr skte hai 
+
+----------------------
+
+NOTE -> 
+
+1. 1 hi file ke andr bhi multiple components bna skte hai  
+2. Component "FIRST LETTER ALWAYS START WITH  CAPITAL LETTER "
+
+-----------------------
+
+import {Button, Text, View} from 'react-native';
+const name = 'arsh';
+let age = 19;
+var email = 'abc@test.com';
+
+function fruit() {
+  return 'Apple';
+}
+
+function App() {
+  return (
+    <View>
+      <Text style={{fontSize: 30}}>Components</Text>
+      {/* use the below component in this */}
+      
+      <User /> {/* using the below component */}
+      <User />
+
+      {/* using the 2nd component */}
+      <CompanyData />
+    </View>
+  );
+}
+
+// function component in same file
+const User = () => { // ARROW fun is js function
+  return (
+    <View>
+      <Text style={{fontSize: 30}}>Name: Arsh</Text>
+      <Text style={{fontSize: 30}}>Age: 29</Text>
+      <Text style={{fontSize: 30}}>Email : abc@test.com</Text>
+    </View>
+  );
+};
+
+const CompanyData = () => { // 2nd component
+  return (
+    <View>
+      <Text style={{fontSize: 20}}>Name:XYZ COMPANY</Text>
+      <Text style={{fontSize: 20}}>Area: Delhi</Text>
+    </View>
+  );
+};
+export default App;
+
+--------------------------------------------
+IMPORTANT TIP ----> 
+
+NOTE -> Agr multiple components hai, 10  20 toh kya hum 1 hi file bnadege 
+Nope, seperate file bnaege har component ki make sure krege ki uska 
+har component ki file ka first letter capital hi ho
+
+------------------------------------------
+
+Folder structure -> make folder -> "components" -> iske andr sare Components put kro 
+
+LOOK AT THE IMPORT AND EXPORT THE FUNCTIONS 
+
+--------------- FINISH ---------------------
